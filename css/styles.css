@@ -192,7 +192,7 @@ main form button{
 }
 .formulario{
   background-color:  rgb(240, 120, 150);
-  width: 75%;
+  width: 60%;
   border-radius: 5px;
   font-size: 50px;
   margin: 30px auto;
@@ -228,7 +228,7 @@ main form button{
   margin-bottom: 10px;
 }
 .dato-genero{
-  grid-column: 1/4;
+  grid-column: 1/5;
   text-align: center;
 }
 
