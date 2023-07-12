@@ -17,15 +17,24 @@
     margin: 0px;
 }
 .portada h1{
-    font-size: 100px;
+    font-size: 75px;
     color: black;
     text-align: center;
-    padding: 95px;
 }
 header {
     background-color: rgb(240, 120, 150);
     width: 100%;
     background-size: cover;
+}
+.img1 {
+  width: 25%;
+  height: 25%;
+
+}
+.img2 {
+  width: 25%;
+  height: 25%;
+
 }
 @media(max-width:768px) {
   body{
@@ -45,12 +54,12 @@ header {
     background-size: cover;
   }
   .img1 {
-    height: 200px;
-    height: 200px;
+    height: 50%;
+    height: 50%;
   }
   .img2{
-    height: 200px;
-    height: 200px;
+    height: 50%;
+    height: 50%;
     display: none;
   }
 }
@@ -72,13 +81,13 @@ header {
     width: 300px;
   }
   .img1 {
-    height: 200px;
-    height: 200px;
+    height: 50%;
+    height: 50%;
 
   }
   .img2{
-    height: 200px;
-    height: 200px;
+    height: 50%;
+    height: 50%;
     display: none;
   }
 }
@@ -159,7 +168,7 @@ main form button{
 }
 
 .p-index {
-  font-size: 30px;
+  font-size: 150%;
   border: solid 2px black;
   border-radius: 5px;
   padding: 10px;
