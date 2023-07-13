@@ -6,6 +6,41 @@
     box-sizing: border-box;
    
 }
+/*.contenedor{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header header header"
+                        "main main main"
+                        "pie pie pie";
+}
+.header{
+  grid-area: header;
+}
+.main{
+  grid-area: main;
+}
+.piePagina{
+  grid-area: pie;
+}
+@media(max-width:768px){
+ .contenedor{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-areas: "header header"
+                        "main main"
+                        "pie pie";
+ }
+}
+@media(max-width:320px){
+  .contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                          "main"
+                          "pie";
+  }
+}
+*/
 .contenedor{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -52,6 +87,7 @@
     grid-column: 1/2;
   }
 }
+
 .portada{
   
     background-color:  rgb(240, 120, 150);
