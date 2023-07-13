@@ -58,8 +58,6 @@ header {
     height: 50%;
   }
   .img2{
-    height: 50%;
-    height: 50%;
     display: none;
   }
 }
@@ -86,8 +84,6 @@ header {
 
   }
   .img2{
-    height: 50%;
-    height: 50%;
     display: none;
   }
 }
@@ -111,10 +107,6 @@ ul li a:visited{
   .navbar{
    font-size: 20px;
   }
-}
-main form button{
-    color: aliceblue;
-    background-color: violet;
 }
 .h2-index{
     text-align: center;
@@ -257,6 +249,8 @@ main form button{
   border-radius: 5px;
   grid-column: 1/5;
   align-items: center;
+  color: aliceblue;
+  background-color: violet;
 }
 @media (max-width:768px){
   .formulario{
