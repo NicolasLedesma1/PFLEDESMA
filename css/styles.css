@@ -112,26 +112,18 @@ ul li a:visited{
     text-align: center;
     font-size: 50px;
 }
-.imagenPrincipal{
-  width: 100%;
-}
 @media(max-width:768px){
   .h2-index{
-    font-size: 30px;
-  }
-  .main img{
-    max-width: 768px;
-    width: 768px;
+    font-size: 30px; 
   }
 }
 @media(max-width:320px){
   .h2-index{
-    font-size: 30px;
+    font-size: 25px;
   }
-  .main img{
-    max-width: 320px;
-    width: 320px;
-  }
+}
+.imagenPrincipal{
+  width: 100%;
 }
 .pantallaPrincipal {
   display: grid;
@@ -143,19 +135,16 @@ ul li a:visited{
   .pantallaPrincipal{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 10px;
+    padding: 5px;
+    margin: 10px;
     max-width: 768px;
-    width: 720px;
+    width: auto;
   }
 }
 @media (max-width:320px){
   .pantallaPrincipal{
-    display: grid;
-    grid-template-columns: 1fr;
     max-width: 320px;
-    width: 300px;
-    margin:0px;
-    padding: 10px;
+    width: auto;
   }
 }
 
@@ -175,8 +164,6 @@ ul li a:visited{
 @media (max-width:320px){
   .p-index{
     font-size: 15px;
-    text-align: start;
-    border: none;
   }
 }
 .color{
