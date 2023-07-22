@@ -1,217 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Quicksand', sans-serif;
-    box-sizing: border-box;
-   
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
 }
-/*.contenedor{
+
+.tarjeta .tarjeta__boton {
+  background-color: violet;
+  color: aliceblue;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.contenedor {
+  background-color: rgb(240, 105, 150);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "header header header"
-                        "main main main"
-                        "pie pie pie";
 }
-.header{
-  grid-area: header;
-}
-.main{
-  grid-area: main;
-}
-.piePagina{
-  grid-area: pie;
-}
-@media(max-width:768px){
- .contenedor{
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-areas: "header header"
-                        "main main"
-                        "pie pie";
- }
-}
-@media(max-width:320px){
-  .contenedor{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header"
-                          "main"
-                          "pie";
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr;
   }
 }
-*/
-.contenedor{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.header{
+.contenedor .header {
   grid-column: 1/4;
-  grid-row: 1/2 ;
+  grid-row: 1/2;
 }
-.main{
+@media (max-width: 768px) {
+  .contenedor .header {
+    grid-column: 1/3;
+  }
+}
+.contenedor .main {
   grid-column: 1/4;
   grid-row: 2/3;
 }
-.piePagina{
+@media (max-width: 768px) {
+  .contenedor .main {
+    grid-column: 1/3;
+  }
+}
+.contenedor .piePagina {
   grid-column: 1/4;
   grid-row: 3/4;
 }
-@media(max-width:768px){
-  .contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .header{
+@media (max-width: 768px) {
+  .contenedor .piePagina {
     grid-column: 1/3;
-  }
-  .main{
-    grid-column: 1/3;
-  }
-  .piePagina{
-    grid-column: 1/3;
-  }
-}
-@media(max-width:320px){
-  .contenedor{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .header{
-    grid-column: 1/2;
-  }
-  .main{
-    grid-column: 1/2;
-  }
-  .piePagina{
-    grid-column: 1/2;
   }
 }
 
-.portada{
-  
-    background-color:  rgb(240, 120, 150);
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0px;
+.portada {
+  background-color: rgb(240, 120, 150);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
 }
-.portada h1{
-    font-size: 75px;
-    color: black;
-    text-align: center;
-}
-header {
-    background-color: rgb(240, 120, 150);
-    width: 100%;
-    background-size: cover;
-}
-.img1 {
-  width: 25%;
-  height: 25%;
-}
-.img2 {
-  width: 25%;
-  height: 25%;
-}
-@media(max-width:768px) {
-  body{
-    align-items: center;
-    max-width: 768px;
-    width: 100%;
-  }
-  .portada h1 {
-    font-size: 40px;
-  }
-  .portada{
-    display: flex;
+@media (max-width: 768px) {
+  .portada {
     flex-direction: column-reverse;
     max-width: 768px;
     width: 750px;
-    align-items: center;
-    background-size: cover;
   }
-  .img1 {
+}
+.portada .img1 {
+  width: 25%;
+  height: 25%;
+}
+@media (max-width: 768px) {
+  .portada .img1 {
     height: 50%;
     height: 50%;
   }
-  .img2{
+}
+.portada .img2 {
+  width: 25%;
+  height: 25%;
+}
+@media (max-width: 768px) {
+  .portada .img2 {
     display: none;
   }
 }
-@media(max-width:320px) {
-  body{
-    align-items: start;
-    max-width: 320px;
-    width: 100%;
-  }
+.portada h1 {
+  font-size: 75px;
+  color: black;
+  text-align: center;
+}
+@media (max-width: 768px) {
   .portada h1 {
-    font-size: 50px;
-    max-width: 320px;
-    width: 300px;
-    padding: 0px;
-    margin: 0px;
-  }
-  .portada{
-    max-width: 320px;
-    width: 300px;
-  }
-  .img1 {
-    height: 50%;
-    height: 50%;
-
-  }
-  .img2{
-    display: none;
+    font-size: 40px;
   }
 }
-.navbar{
+
+.navbar {
   background-color: rgb(240, 120, 150) !important;
   font-size: 45px;
   margin: 0px;
 }
-.row, .container, .container-fluid{
-  flex-direction: column;
-}
-ul li a:visited{
-  color: rgb(201, 75, 251);
-}
-@media (max-width:768px){
-  .navbar{
-   font-size: 25px;
-  }
-}
-@media (max-width:320px){
-  .navbar{
-   font-size: 20px;
-  }
-}
-.h2-index{
-    text-align: center;
-    font-size: 50px;
-}
-@media(max-width:768px){
-  .h2-index{
-    font-size: 30px; 
-  }
-}
-@media(max-width:320px){
-  .h2-index{
+@media (max-width: 768px) {
+  .navbar {
     font-size: 25px;
   }
 }
-.imagenPrincipal{
-  width: 100%;
+.navbar .row, .navbar .container, .navbar .container-fluid {
+  flex-direction: column;
 }
-.pantallaPrincipal {
+.navbar a:visited {
+  color: rgb(201, 75, 251);
+}
+.navbar a:hover {
+  color: white;
+}
+
+.main .h2-index {
+  text-align: center;
+  font-size: 50px;
+}
+@media (max-width: 768px) {
+  .main .h2-index {
+    font-size: 30px;
+  }
+}
+.main .pantallaPrincipal {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 50px;
-  margin: 20px;  
+  margin: 20px;
 }
-@media (max-width:768px){
-  .pantallaPrincipal{
+@media (max-width: 768px) {
+  .main .pantallaPrincipal {
     display: grid;
     grid-template-columns: 1fr;
     padding: 5px;
@@ -220,119 +144,60 @@ ul li a:visited{
     width: auto;
   }
 }
-@media (max-width:320px){
-  .pantallaPrincipal{
-    max-width: 320px;
-    width: auto;
-  }
+.main .pantallaPrincipal .imagenPrincipal {
+  width: 100%;
 }
-
-.p-index {
+.main .pantallaPrincipal .p-index {
   font-size: 150%;
   border: solid 2px black;
   border-radius: 5px;
   padding: 10px;
 }
-@media (max-width:768px){
-  .p-index{
+.main .pantallaPrincipal .p-index .color {
+  color: white;
+}
+@media (max-width: 768px) {
+  .main .pantallaPrincipal .p-index {
     font-size: 30px;
     text-align: start;
     border: none;
   }
 }
-@media (max-width:320px){
-  .p-index{
-    font-size: 15px;
-  }
-}
-.color{
-    color: white;
-}
-.p-contact{
+.main .p-contact {
   font-size: 150%;
 }
-@media(max-width:768px){
-.p-contact{
-  width: 650px;
-  height: 280px;
-  margin: 30px auto;
-  padding: 30px;
+@media (max-width: 768px) {
+  .main .p-contact {
+    width: 650px;
+    height: 280px;
+    margin: 30px auto;
+    padding: 30px;
+  }
 }
+.main .p-rrgg {
+  font-size: 150%;
 }
-@media(max-width:320px){
-.p-contact{
-  width: 300px;
-  height: 300px;
-  margin: 2px;
-  padding: 10px;
-  font-size: 17px;
-}
-}
-.formulario{
-  background-color:  rgb(240, 120, 150);
+
+.formulario {
+  background-color: rgb(240, 120, 150);
   width: 60%;
   border-radius: 5px;
   font-size: auto;
   margin: 30px auto;
   padding: 30px;
   color: rgb(0, 0, 0);
-  border-radius: 20px; 
+  border-radius: 20px;
   text-align: start;
   display: grid;
-  grid-template-columns: repeat(4,1fr)
+  grid-template-columns: repeat(4, 1fr);
 }
-.dato-nombre{
- grid-column: 1/3;
-
+@media (max-width: 768px) {
+  .formulario {
+    width: 550px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-.dato-apellido{
-  grid-column: 3/5;
-  padding-left: 10px;
-}
-.dato-tel{
-  grid-column: 1/1;
-}
-.dato-email{
-  grid-column: 2/5;
-  padding-left: 10px;
-}
-.dato-motivo{
-  grid-column: 1/5;
-}
-.dato{
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  margin-bottom: 10px;
-}
-.dato-genero{
-  grid-column: 1/5;
-  text-align: center;
-}
-
-.acepta{
-  grid-column: 1/6;
-  grid-row: 5/6;
-  text-align: center;
-  font-size: auto;
-}
-.acepta input{
-  margin-left: 15px;
-}
-
-.dato input{
-  color: white;
-  font-size: auto;
-  background-color: transparent;
-}
-.dato textarea{
-  background-color: transparent;
-  font-size: auto;
-  color: white;
-  height: 100%;
-  width: 100%;
-}
-.formulario button{
+.formulario button {
   width: auto;
   height: auto;
   font-size: 25px;
@@ -342,166 +207,141 @@ ul li a:visited{
   color: aliceblue;
   background-color: violet;
 }
-@media (max-width:768px){
-  .formulario{
-    width: 550px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .dato-nombre{
+@media (max-width: 768px) {
+  .formulario button {
     grid-column: 1/3;
   }
-  .dato-apellido{
+}
+.formulario .dato {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 10px;
+}
+.formulario .dato input {
+  color: white;
+  font-size: auto;
+  background-color: transparent;
+}
+.formulario .dato textarea {
+  background-color: transparent;
+  font-size: auto;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .formulario .dato textarea {
+    font-size: 20px;
+  }
+}
+.formulario .dato-nombre {
+  grid-column: 1/3;
+}
+.formulario .dato-apellido {
+  grid-column: 3/5;
+  padding-left: 10px;
+}
+@media (max-width: 768px) {
+  .formulario .dato-apellido {
     grid-column: 1/3;
     padding-left: 0px;
   }
-  .dato-tel{
+}
+.formulario .dato-tel {
+  grid-column: 1/1;
+}
+@media (max-width: 768px) {
+  .formulario .dato-tel {
     grid-column: 1/3;
   }
-  .dato-email{
+}
+.formulario .dato-email {
+  grid-column: 2/5;
+  padding-left: 10px;
+}
+@media (max-width: 768px) {
+  .formulario .dato-email {
     grid-column: 1/3;
     padding-left: 0px;
   }
-  .dato-motivo{
+}
+.formulario .dato-motivo {
+  grid-column: 1/5;
+}
+@media (max-width: 768px) {
+  .formulario .dato-motivo {
     grid-column: 1/3;
-   }
-   .dato-genero{
+  }
+}
+.formulario .dato-genero {
+  grid-column: 1/5;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .formulario .dato-genero {
     grid-column: 1/3;
     text-align: start;
     padding-left: 190px;
-   }
-   .acepta{
+  }
+}
+.formulario .acepta {
+  grid-column: 1/6;
+  grid-row: 5/6;
+  text-align: center;
+  font-size: auto;
+}
+@media (max-width: 768px) {
+  .formulario .acepta {
     grid-column: 1/3;
     text-align: center;
     grid-row: 7/8;
-   }
-   .formulario button{
-    grid-column: 1/3;
-   }
-   .dato textarea{
-    background-color: transparent;
-    font-size: 20px;
-    color: white; } 
-  }
-@media (max-width:320px){
-  .formulario{
-    width: 320px;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0px;
-  }
-  .dato-nombre{
-    grid-column: 1/2;
-  }
-  .dato-apellido{
-    grid-column: 1/2;
-    padding-left: 0px;
-  }
-  .dato-tel{
-    grid-column: 1/2;
-  }
-  .dato-email{
-    grid-column: 1/2;
-    padding-left: 0px;
-  }
-  .acepta{
-    grid-column: 1/2;
-    text-align: start;
-    display: flex;
-  }
-  .dato-motivo{
-    grid-column: 1/2;
-  }
-  .dato-genero{
-    grid-column: 1/2;
-    text-align: start;
-    padding-left: 10px;
-  }
-  .formulario button{
-    grid-column: 1/2;
-  }
-  .dato textarea{
-    background-color: transparent;
-    font-size: 15px;
-    color: white; 
   }
 }
-.p-rrgg{
-  font-size: 45px;
+.formulario .acepta input {
+  margin-left: 15px;
 }
-body{
-  background-color: rgb(240, 105, 150);
-}
-main ul{
- display: flex;
-  flex-direction: row;
-}
+
 .tarjeta {
-    width: 600px;
-    margin: 30px;
-    font-size: 25px;
-    border: solid 2px black;
-    padding: 10px;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: rgb(240, 120, 150)
+  width: 600px;
+  margin: 30px;
+  font-size: 25px;
+  border: solid 2px black;
+  padding: 10px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(240, 120, 150);
 }
-.tarjeta__img{
-    width: 100%;
+.tarjeta .tarjeta__img {
+  width: 100%;
 }
-.tarjeta__boton{
-    background-color:  violet;
-    color: aliceblue;
-    width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-}
-.tarjeta__list{
+.tarjeta .tarjeta__list {
   display: flex;
   flex-direction: column;
 }
-.tarjeta__titulo{
-    list-style: none;
-    text-decoration-line:underline;
-    font-size: 45px;
-    text-align: center;
+.tarjeta .tarjeta__titulo {
+  list-style: none;
+  text-decoration-line: underline;
+  font-size: 45px;
+  text-align: center;
 }
-.piePagina{
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.piePagina {
   display: grid;
   grid-template-columns: 3fr 1fr;
   font-size: 20px;
   column-gap: 20px;
   align-items: start;
 }
-.redes{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  font-size: 50px;
-}
-.news {
-  margin: 2px 30px;
-  display: flex;
-  flex-direction: column;
-}
-.news input{
-  padding: 10px 25px;
-  font-size: 20px;
-  text-align: center;
-  background-color: rgb(240, 120, 150);
-  color: white;
-}
-.news button{
-  padding: 5px;
-  font-size: 20px;
-  background-color: violet;
-  color: white;
-}
-@media (max-width:768px){
-  .piePagina{
+@media (max-width: 768px) {
+  .piePagina {
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -509,43 +349,64 @@ main ul{
     max-width: 768px;
     width: auto;
   }
-  .news input{
-    font-size: 20px;
-    margin:0px;
-  }
-  .news button{
-    width: 550px;
-    font-size: 20px;
-    margin: 0px;
-  }
-  .redes{
+}
+.piePagina .redes {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-around;
+  font-size: 50px;
+}
+.piePagina .redes .redes__ig {
+  color: #fb3958;
+}
+.piePagina .redes .redes__fb {
+  color: #3a5795;
+}
+.piePagina .redes .redes__wpp {
+  color: #4fcb5b;
+}
+@media (max-width: 768px) {
+  .piePagina .redes {
     gap: 30px;
     font-size: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
+    width: 100%;
     padding-left: 100px;
   }
 }
-@media (max-width:320px){
-  .piePagina{
-    max-width: 320px;
-    padding: 0px;
-  }
-  .news input{
-    width: 220px;
-    font-size: 15px;
-    padding: 0px;
-  }
-  .news button{
-    width: 220px;
+.piePagina .news {
+  margin: 2px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.piePagina .news input {
+  padding: 10px 25px;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(240, 120, 150);
+  color: white;
+}
+@media (max-width: 768px) {
+  .piePagina .news input {
     font-size: 20px;
     margin: 0px;
-    padding: 0px;
-  }
-  .redes{
-    gap: 10px;
-    font-size: 30px;
-    padding: 10px 20px;
   }
 }
+.piePagina .news button {
+  padding: 5px;
+  font-size: 20px;
+  background-color: violet;
+  color: white;
+}
+@media (max-width: 768px) {
+  .piePagina .news button {
+    width: 550px;
+    font-size: 20px;
+    margin: 0px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

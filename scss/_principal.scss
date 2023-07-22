@@ -1,0 +1,54 @@
+.main{
+    .h2-index{
+        text-align: center;
+        font-size: 50px;
+        @media(max-width:768px){
+            font-size: 30px; 
+        }
+    }
+    .pantallaPrincipal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+        margin: 20px;
+        @media (max-width:768px){
+              display: grid;
+              grid-template-columns: 1fr;
+              padding: 5px;
+              margin: 10px;
+              max-width: 768px;
+              width: auto;
+        }
+        .imagenPrincipal{
+            width: 100%;
+        }
+        .p-index {
+            font-size: $fontsizep;
+            border: $border ;
+            border-radius: 5px;
+            padding: 10px;
+            .color{
+                color: white;
+            }
+            @media (max-width:768px){
+                font-size: 30px;
+                text-align: start;
+                border: none;
+    
+            }
+        }
+    }
+    .p-contact{
+        font-size: $fontsizep;
+        @media(max-width:768px){
+          width: 650px;
+          height: 280px;
+          margin: 30px auto;
+          padding: 30px;
+        }
+    }  
+    .p-rrgg{
+        font-size: $fontsizep;
+    }
+}
+

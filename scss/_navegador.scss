@@ -1,0 +1,19 @@
+.navbar{
+    background-color: $colorSecundario !important;
+    font-size: 45px;
+    margin: 0px;
+    @media (max-width:768px){
+      font-size: 25px;
+    }
+    .row, .container, .container-fluid{
+      flex-direction: column;
+    }
+      a:visited{
+      color: rgb(201, 75, 251);
+    }
+    a {
+        &:hover{
+        color:white;
+        }
+    }
+  }

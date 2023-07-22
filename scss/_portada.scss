@@ -1,0 +1,39 @@
+.portada{
+    background-color: $colorSecundario;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    background-size: cover;
+    @media(max-width:768px){
+        flex-direction: column-reverse;
+        max-width: 768px;
+        width: 750px;
+    }
+        .img1 {
+            width: 25%;
+            height: 25%;
+            @media(max-width:768px){
+                height: 50%;
+                height: 50%;
+            }
+        }
+        .img2 {
+            width: 25%;
+            height: 25%;
+            @media(max-width:768px){
+                display: none;
+            }
+        }
+        h1{
+            font-size: 75px;
+            color: black;
+            text-align: center;
+            @media(max-width:768px){
+                font-size: 40px;
+            }
+        }
+
+    
+}
