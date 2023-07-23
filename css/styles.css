@@ -87,7 +87,7 @@
   .portada {
     flex-direction: column-reverse;
     max-width: 768px;
-    width: 750px;
+    width: 768px;
   }
 }
 @media (max-width: 320px) {
@@ -103,7 +103,10 @@
 @media (max-width: 768px) {
   .portada .img1 {
     height: 50%;
-    height: 50%;
+    animation-name: movimiento;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
   }
 }
 .portada .img2 {
@@ -135,6 +138,17 @@
   }
 }
 
+@keyframes movimiento {
+  25% {
+    transform: translate(270px, 0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(-270px, 0);
+  }
+}
 .navbar {
   background-color: rgb(240, 120, 150) !important;
   font-size: 45px;
@@ -317,6 +331,11 @@
   transform: scale(1) translate(90px);
   background-color: rgb(240, 120, 150);
 }
+@media (max-width: 768px) {
+  .formulario .dato-nombre:hover:hover {
+    transform: none;
+  }
+}
 .formulario .dato-apellido {
   grid-column: 3/5;
   padding-left: 10px;
@@ -330,6 +349,9 @@
     grid-column: 1/3;
     padding-left: 0px;
   }
+  .formulario .dato-apellido:hover {
+    transform: none;
+  }
 }
 .formulario .dato-tel {
   grid-column: 1/1;
@@ -341,6 +363,9 @@
 @media (max-width: 768px) {
   .formulario .dato-tel {
     grid-column: 1/3;
+  }
+  .formulario .dato-tel:hover {
+    transform: none;
   }
 }
 .formulario .dato-email {
@@ -356,6 +381,9 @@
     grid-column: 1/3;
     padding-left: 0px;
   }
+  .formulario .dato-email:hover {
+    transform: none;
+  }
 }
 .formulario .dato-motivo {
   grid-column: 1/5;
@@ -368,6 +396,9 @@
   .formulario .dato-motivo {
     grid-column: 1/3;
   }
+  .formulario .dato-motivo:hover {
+    transform: none;
+  }
 }
 .formulario .dato-genero {
   grid-column: 1/5;
@@ -379,12 +410,18 @@
     text-align: start;
     padding-left: 190px;
   }
+  .formulario .dato-genero:hover {
+    transform: none;
+  }
 }
 @media (max-width: 320px) {
   .formulario .dato-genero {
     grid-column: 1/2;
     text-align: start;
     padding-left: 10px;
+  }
+  .formulario .dato-genero:hover {
+    transform: none;
   }
 }
 .formulario .acepta {

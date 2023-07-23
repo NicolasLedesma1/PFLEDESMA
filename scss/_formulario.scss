@@ -64,6 +64,11 @@
         &:hover {
           transform: scale(1) translate(90px);
           background-color: $colorSecundario;
+          @media(max-width: 768px){
+            &:hover{
+              transform: none;
+            }
+          }
         }
 
     }
@@ -77,6 +82,9 @@
         @media (max-width:768px){
         grid-column: 1/3;
         padding-left: 0px;
+        &:hover{
+          transform: none;
+        }
         }
     }  
     .dato-tel{
@@ -87,6 +95,9 @@
         }
         @media (max-width:768px){
         grid-column: 1/3;
+        &:hover{
+          transform: none;
+        }
         }
     }
     .dato-email{
@@ -99,6 +110,9 @@
         @media (max-width:768px){
         grid-column: 1/3;
         padding-left: 0px;
+        &:hover{
+          transform: none;
+        }
         }
     }
     .dato-motivo{
@@ -109,6 +123,9 @@
         }
         @media (max-width:768px){
           grid-column: 1/3;
+          &:hover{
+            transform: none;
+          }
         }
     }
     .dato-genero{
@@ -118,11 +135,18 @@
           grid-column: 1/3;
           text-align: start;
           padding-left: 190px;
+          &:hover{
+            transform: none;
+          }
         }
         @media (max-width:320px){
           grid-column: 1/2;
           text-align: start;
-          padding-left: 10px;}
+          padding-left: 10px;
+          &:hover{
+            transform: none;
+          }
+        }
 
     }
     .acepta{

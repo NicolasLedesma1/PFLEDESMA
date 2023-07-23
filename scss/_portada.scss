@@ -9,7 +9,7 @@
     @media(max-width:768px){
         flex-direction: column-reverse;
         max-width: 768px;
-        width: 750px;
+        width: 768px;
     }
     @media(max-width:320px){
         max-width: 320px;
@@ -20,7 +20,10 @@
             height: 25%;
             @media(max-width:768px){
                 height: 50%;
-                height: 50%;
+                animation-name: movimiento;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+                animation-delay: 2s;
             }
         }
         .img2 {
@@ -29,7 +32,6 @@
             @media(max-width:768px){
                 display: none;
             }
-            @media(max-width:320px){}
         }
         h1{
             font-size: 75px;
@@ -45,5 +47,17 @@
                 padding: 0px;
                 margin: 0px;
               }
+            }
+        }
+        @keyframes movimiento {
+
+            25%{
+                transform: translate(270px,0);
+            }
+            50%{
+                transform: translate(0,0);
+            }
+            75%{
+                transform: translate(-270px,0);
             }
         }
