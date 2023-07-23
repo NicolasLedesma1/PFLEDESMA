@@ -10,9 +10,16 @@
     text-align: start;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    overflow: hidden;
     @media(max-width:768px){
       width: 550px;
       grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width:320px){
+      width: 320px;
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0px;
     }
     button{
         width: auto;
@@ -22,6 +29,9 @@
         grid-column: 1/5;
         align-items: center;
         color: aliceblue;
+        transition: 0.5s;
+        &:hover {
+          transform: rotateX(360deg);}
         background-color: $colorBoton;
         @media (max-width:768px){
           grid-column: 1/3;
@@ -32,6 +42,7 @@
         flex-direction: column;
         row-gap: 10px;
         margin-bottom: 10px;
+        transition: 0.9s;
         input{
             color: white;
             font-size: auto;
@@ -50,10 +61,19 @@
     }
     .dato-nombre{
         grid-column: 1/3;
+        &:hover {
+          transform: scale(1) translate(90px);
+          background-color: $colorSecundario;
+        }
+
     }
     .dato-apellido{
         grid-column: 3/5;
         padding-left: 10px;
+        &:hover {
+          transform: rotateX(360deg);
+          background-color: $colorSecundario;
+        }
         @media (max-width:768px){
         grid-column: 1/3;
         padding-left: 0px;
@@ -61,6 +81,10 @@
     }  
     .dato-tel{
         grid-column: 1/1;
+        &:hover {
+          transform: rotate(360deg);
+          background-color: $colorSecundario;
+        }
         @media (max-width:768px){
         grid-column: 1/3;
         }
@@ -68,6 +92,10 @@
     .dato-email{
         grid-column: 2/5;
         padding-left: 10px;
+        &:hover {
+          transform: scaleX(1.5) translate(-50px);
+          background-color: $colorSecundario;
+        }
         @media (max-width:768px){
         grid-column: 1/3;
         padding-left: 0px;
@@ -75,6 +103,10 @@
     }
     .dato-motivo{
         grid-column: 1/5;
+        &:hover {
+          transform: scale(1.2) translate(50px);
+          background-color: $colorSecundario;
+        }
         @media (max-width:768px){
           grid-column: 1/3;
         }
@@ -87,6 +119,11 @@
           text-align: start;
           padding-left: 190px;
         }
+        @media (max-width:320px){
+          grid-column: 1/2;
+          text-align: start;
+          padding-left: 10px;}
+
     }
     .acepta{
         grid-column: 1/6;
@@ -97,6 +134,11 @@
           grid-column: 1/3;
           text-align: center;
           grid-row: 7/8;
+        }
+        @media (max-width:320px){
+          grid-column: 1/2;
+          text-align: start;
+          display: flex;
         }
         input{
             margin-left: 15px;

@@ -12,6 +12,10 @@
       max-width: 768px;
       width: auto;
     }
+    @media (max-width:320px){
+      max-width: 320px;
+      padding: 0px;
+    }
     .redes{
       display: flex;
       flex-direction: row;
@@ -32,6 +36,11 @@
         width: 100%;
         padding-left: 100px;
       }
+      @media (max-width:320px){
+        gap: 10px;
+        font-size: 30px;
+        padding: 5px 100px;
+      }
     }
     .news {
       margin: 2px 30px;
@@ -47,6 +56,12 @@
           font-size: 20px;
           margin:0px;
         }
+        @media (max-width:320px){
+          width: 260px;
+          font-size: 15px;
+          padding: 0px;
+          align-items: center;
+        }
       }
       button{
         padding: 5px;
@@ -57,6 +72,12 @@
           width: 550px;
           font-size: 20px;
           margin: 0px;
+        }
+        @media(max-width:320px){
+          width: 260px;
+          font-size: 20px;
+          margin: 0px;
+          padding: 0px;
         }
       }
     }

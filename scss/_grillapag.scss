@@ -1,15 +1,22 @@
 .contenedor{
     background-color: $colorPrincipal;
+    background: linear-gradient(180deg, rgba(240,105,150,1) 0%, rgba(240,120,150,0.8953956582633054) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     @media(max-width:768px){
-    grid-template-columns: 1fr 1fr;}
+        grid-template-columns: 1fr 1fr;}
+    @media(max-width:320px){
+        grid-template-columns: 1fr;
+    }
         .header{
           grid-column: 1/4;
           grid-row: 1/2 ;
           @media(max-width:768px){ 
               grid-column: 1/3;
             }
+          @media(max-width:320px){
+            grid-column: 1/2;
+          }
         } 
         .main{
         grid-column: 1/4;
@@ -17,6 +24,9 @@
         @media(max-width:768px){
             grid-column: 1/3;
             }
+        @media(max-width:320px){
+            grid-column: 1/2;
+        }
         }
         .piePagina{
         grid-column: 1/4;
@@ -24,5 +34,8 @@
         @media(max-width:768px){ 
             grid-column: 1/3;
             }
+        @media(max-width:320px){
+            grid-column: 1/2;
         }
-  }
+        }
+}

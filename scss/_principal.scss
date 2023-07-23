@@ -21,6 +21,9 @@
         }
         .imagenPrincipal{
             width: 100%;
+            @media(max-width:320px){
+                max-width: 320px;
+            }
         }
         .p-index {
             font-size: $fontsizep;
@@ -36,6 +39,9 @@
                 border: none;
     
             }
+            @media(max-width:320px){
+                font-size: 15px
+            }
         }
     }
     .p-contact{
@@ -45,6 +51,13 @@
           height: 280px;
           margin: 30px auto;
           padding: 30px;
+        }
+        @media(max-width:320px){
+            width: 300px;
+            height: 300px;
+            margin: 2px;
+            padding: 10px;
+            font-size: 17px;
         }
     }  
     .p-rrgg{

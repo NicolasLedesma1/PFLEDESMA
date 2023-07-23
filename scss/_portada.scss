@@ -11,6 +11,10 @@
         max-width: 768px;
         width: 750px;
     }
+    @media(max-width:320px){
+        max-width: 320px;
+        width: 320px;
+    }
         .img1 {
             width: 25%;
             height: 25%;
@@ -25,6 +29,7 @@
             @media(max-width:768px){
                 display: none;
             }
+            @media(max-width:320px){}
         }
         h1{
             font-size: 75px;
@@ -33,7 +38,12 @@
             @media(max-width:768px){
                 font-size: 40px;
             }
+            @media(max-width:320px){
+                font-size: 50px;
+                max-width: 320px;
+                width: 300px;
+                padding: 0px;
+                margin: 0px;
+              }
+            }
         }
-
-    
-}
