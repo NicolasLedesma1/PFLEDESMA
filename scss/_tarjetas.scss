@@ -11,11 +11,8 @@
     justify-content: space-around;
     background-color: $colorSecundario;
     @media(max-width:768px){
-      .tarjeta{
-        display: flex;
-        flex-direction: row;
+       margin: 30px ;
       }
-}
 
     .tarjeta__img{
       width: 100%;

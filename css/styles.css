@@ -462,9 +462,8 @@
   background-color: rgb(240, 120, 150);
 }
 @media (max-width: 768px) {
-  .tarjeta .tarjeta {
-    display: flex;
-    flex-direction: row;
+  .tarjeta {
+    margin: 30px;
   }
 }
 .tarjeta .tarjeta__img {
