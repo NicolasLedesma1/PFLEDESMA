@@ -1,6 +1,7 @@
 .tarjeta {
     width: 600px;
     margin: 30px;
+    margin-left: 30%;
     font-size: 25px;
     border: $border;
     padding: 10px;
@@ -9,6 +10,12 @@
     flex-direction: column;
     justify-content: space-around;
     background-color: $colorSecundario;
+    @media(max-width:768px){
+      .tarjeta{
+        display: flex;
+        flex-direction: row;
+      }
+}
 
     .tarjeta__img{
       width: 100%;
@@ -26,10 +33,10 @@
       font-size: 45px;
       text-align: center;
     }
-
-    
+    ul{
+      display: flex;
+       flex-direction: row;
+     }
 }
-ul{
-  display: flex;
-   flex-direction: row;
- }
+
+

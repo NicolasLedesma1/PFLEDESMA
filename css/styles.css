@@ -451,6 +451,7 @@
 .tarjeta {
   width: 600px;
   margin: 30px;
+  margin-left: 30%;
   font-size: 25px;
   border: solid 2px black;
   padding: 10px;
@@ -459,6 +460,12 @@
   flex-direction: column;
   justify-content: space-around;
   background-color: rgb(240, 120, 150);
+}
+@media (max-width: 768px) {
+  .tarjeta .tarjeta {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .tarjeta .tarjeta__img {
   width: 100%;
@@ -473,8 +480,7 @@
   font-size: 45px;
   text-align: center;
 }
-
-ul {
+.tarjeta ul {
   display: flex;
   flex-direction: row;
 }
